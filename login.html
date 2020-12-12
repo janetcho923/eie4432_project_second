@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--	Author: Sit Sin Ting, Cho Cheuk Ying
+		Date:	Dec 7, 2020
+		File:	login.html
+		Purpose: Project: Online Examination System
+-->
+<html>
+
+<head>
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container h-100">
+        <br>
+            <div class="banner h-10">
+                <span>
+                    <h1>Online Examination System - User Login</h1>
+                    <h5>Sit Sin Ting 18053451D, Cho Cheuk Ying 18024727D</h5> 
+                    
+                </span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div class="d-flex justify-content-center h-90">
+            
+            <br>
+            <div class="user_card">
+                <div class="d-flex justify-content-center">
+                    <div class="brand_logo_container">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEWeJDX///+cHC+YAB2YABuaESidIDKZCCOaDiacGS2XABmbFCro0dT58vOcGy6YACChKzv27O379vewWGK4bHXIkJa6cXnq1tiWABWvVmG2aHH9+fqqSVW0Y2ylOEahLDzBgYjNm6Dkys2nP0zXsLTMmp++e4LFipHx4+XfwMPSqq7Af4aVAA/at7uoQ1Dy5ue4wjvjAAANzUlEQVR4nO2deXuiMBDGOUOQIt7iUa/VWu26fv9vt4RDIZmEWFCOx/evXRXl15lMJtegqBld98fZuqc0Vb317Li/ZpGU1L/dw8rANqr6NgsJ2dhYHVyQcHH0zWbTJUKmf1ywhDuEq76zEoXRjiY8+u2wXyLkH7OEI6/qWypd3ihNOLKqvp8nyJrfCcftsyCRd0wIT37V9/Ik+aeIcNHwLpAvpEWE4zZ1E1nhMSEcdKq+jyeqMwgIt+01YWDEQ0C4amsrJEIrVflus5MqivGt7NvspIGb7pWNXfVNPFX2Rhm2uRkGDXGorKq+hydrpTR3ykJObed766233nrrrbeqENI0rbWJsI11S1vNZrNV19Jxt+rbKVu27oz202RJqD89f3pemyBNa/KhUlqcPnWn6hsrSY4xdmm+UN9ffhuG38iYwHyhu37qjY87tr3j8hGdmt4creFCCKiq7tKs+iaLSN/k8BF9Nnhpzzjm8wWaNBZRlwMMrNhQR5W0INGykb2GtAUDuU1cwnzAgoF2zVuGNsaPAAbRpmkZ3KOAqtuweNo5gBiL3fm4Ge+n0HuHRq2BwRa8fpk6dhzHMtZb9t1GLbbDgNu/t6aGLIfNVo/NaYk6CPippz+DOowZpzrvC+sm2IIzOm1hm2pTNhRwAFkXDDcspTUO/wi1z27gjp6xYCCEqA/tyO467avm3Yaki4ayqKY4IHmN0a83orwFAyGF+lzwiuLtar0VVLoNRupQXf9QCwy7r/N40QAzGY4FlYgmrUkQZTBx3boiwqkaH1AxqQs2gbHN0A0mtdzS+zCg4lCtlnQX8Wt1RHwcMLbXXSRvS6jrh8hmYbmACj5nP/1lpzz3q2aIv7BgkMBSixmjJNJEVqxVuBFG0S7mJJwe9fl/weesy+2/dUIUZjLm8Kpo0FUOPV1MiNJ2rU/X3xEDqmofRNT72Qu+jeBFP72MUxcr5liQ/AdC9GjPJnt5kZ15qR5WFAaZCBBCdGb0JSTQ2BPqtRogwt3EMAvIIjr/6EsGZCoqFWjqgihlQRbR+cesul1IB2j06ZerbouSFgwR0R2RtaCqLoO3NcZ1q0YUWhAPsy/fEe0/7LrpB5lNxLSTVo0otuAn/UZf02JA6CryHh1oYsTKEjjYgjGgNmTf6tshBmBB9WSEV1mjOiH6W+huklzUYnbQqJEVQQuGMxgCxEocVeiigQxoeeLaxZAF1a/bZTBiFZ0GbME7oIIMyIrXJQR4SS1a1AUxz4IhIrjIBGhqpL8aRpy/GFECMECkB4AcXanhVR0QOYD0EqAcYh/R48fqHVXKgkRIz3fUdK6TqGpEaUAZK0KAVXcaztn92G8Px/F2e5neMmUQMD/cJHkOrWqtaBuehU3HNLGl+3hy6fMBeZ1GoqsNA1ZtxYxsyxuePvn7DBC9PJG2oGCnUNVtMSPNEm0S5VvxKtwKVSkish2MsWl3pRameW1RDFido2pY95aj4/l83n59rn3PyafkRNRe3op2FSMNhL3ZNm0R97RZ67kbmWHEa64LwIhPXCVGlrllJlKC4fmnn8cId/15bvrytoi1M/R7gb5HBvdekUXegsONIJZaUTfySkT0V7Qbb7ri/KjW+17ZCi/c8PpDZOyWjgDxGWm4s85JMcfgFlFNcdVBjMgb9UOAwWeFiOVH1PxjBerJY11OU0i7HawFVgTy0viP8VIrel95fIG+u/TNRoBqYkUw3LCp983aL0T0ZM5NsFP3CeBjiHd3XggRRyXuSMVzKUAa8Q6Yg5i5KtNehYjcbP9hdYG5dgnENKA8YjYgia34jzcweVQe//AZe7M3l8sC3sJNDiITcUWI/ZJ2+Ov0NkkpRA3R2Y/YilEcRh2mSxEhXkrZddtl1h9yEMMejgUkiIiLOPU4gNGilHIrg5jVrAw/7QCZqBgxsCIEGPSYYYCHun5X4ad217hbgBC/S/BTB+wJd9uf+WR8gRtoHzkg4EfsU2zX7/Y0LqDbSxIJyFEnxfcU69/sb46xbjpd27H8OZjK9dcg4C07px3VRXzAdJwFEL8N8K4fENAKz969H7I7MskOBUgjRhA8C6ZbGoA4LNoSPSaQHrNHPzC41CIGzCKKAPu9LACLeCmavFn0/Y/pAO2sBg8DphHlLRjeD71KPCjYYTBOemIP73RX+VakAe+I7kOAimLQo/CCbnrfKhgJrOZq51qRBUwQowQB7AdBwKD3ogL4oVh2Ss8gbUGvz0OEACPEuJt4AFAxqZ3Fu2JTbx4V9tfwvIoY8aMDX4W804MuGl6lZT93LdYQu9lv45YC7a75iDzAQIJJKh4gs0FgUejMG+plf3bPDc3dFW8AArto6jdgwDU3gGDqEAOzwPoQ4Sr7ZUd+q+6uYcTSARWHmvPjtBw5oWX2y34EHoGpz0oCwhP+omIZ9CGGQqf6aBtu+ISwDX9nQWJD/iw6fRClmA3X2S/j140uF1CISO9BLdQO6Vi640VmrQfF0ggQccOTaPF0wEXsZEc7xWIp3R/yvk3r8S2o9U6cQkLiBXCeFemWU7A/pOMAHGo4Lhr2g1rwHienydnEEM3rMLKoxLRgTkMf3Ln+fRRQIe+BeanQglxE5nBtwbyUGVsAj8IQBZnEfaGxRf5+KQixQw9Yi05GMeNDZrlAkwAExoe5FoQRmcMdRceHwBifQpQDZMf4cpv6Fv8y/dP9+Tg38RNJSQHzNBlEYRTNwGfmaaQsGGrTuZkRYZPd6V58xhSYa0shCgEVF3iVD+guwcx2Ovc90+462HDGbKc7LTzXpjg/7I/OE9dB0hYMX0+GUeCst7vG4LeRoi+HyXxzBvuWEuZLFf/Kfm+yyQsD7yWZjMLeboxoQWX4SA4De4RIZcx5w+sWMaIGjCdiDA/6k8fwwNRVlME8jFjKuoViQGtPsaM6DGLiiiIH7jL79ZMslG67OSpn7SlAhH6Vg3gPJ1qPP7VPT0C6q67wKo7KWj8EfZGDmO4SRIjZczODVTd1lbwVS1sDBo4wcRCz3boQMWXFbOYij1hmMUIL3IvBINKpGb3QnUG8WZFOzWQRf0rdbgKXCPzMIrLptSghsONDlmzuKdcWNyXXlZJAhIZIHCt27laExg8a2GNmtBiWvu0LPrGdQoSHuXD4jxDJSdIFOMxFPlzS7qZp7wm1z+D6QTfEHWfSCV7Rj/4czp8+PI4PWv4fwQTA4vj3KXXBhI6qcZ1GQ4LclVdQInjLmPBa49l+VkVXuCqw4CBCfK+CiCqS7bN1zoNefhttyX2OhFbk67eIim2sxru0B0zPQ49v9jL0Sys6K+gyCUQFOZ6//hyfAx0mS0/HpWUxPP3KinCwkUMMhLomDk93vKbq4C8QeYB5iF3r6QYDxalsKTj3ZPMzFMHiqYLnp5luVVFCWdj1s0I2NA+Qj4hJtt/fTxRft7BpOoGnesaLavALu35aqCvOMXmOim/DmcX0st2Oj4fteee+qorrA1YUW5CPiMHx2vFltRWkEfMBYUQYsOzRhEiSiDKAECLHgi8twyvVFpEjA8giVm9BIpl+0WOny2UQYcCfl9c3gRHTRQeYQsFEi2VejgoDVlFkMM+KGHp/8Qdzxov1A8yzIr2NIwa0OUncLh5f0qWXqgTkjTRiRGh5KZqyABHj6fl6AXIdleRWNnB0gFhQUcBR/xAunhVpU2GhT9CK4akKn42jCSAwJOZUB4v0U2k5esiKxOGAOlh3QAaxthYkYhH7JCx6zIRnGpBCrLEFiRhEcjyA3sdLA2bmtYWAdSi2S+eoZN3ZZpbGl/S45zbhD5YgvH1ZDQCZUb+N2O2D6oadTo1nw4EikinAyitfRspY0SWrlj5UXpZWaEWhBevgopHSIw1yQI3ZezYC5+6Dtii2YG0AM1YkgYbuKwac1WgUT3/W3YJEdyuSbcQ2daDtJL7X+luQ6NZpHEx2r7l4g2S9g8xdCWL4gIMt5W+iKTIYsPr6waxiREJInwebCOY5mwOYhJvwAQdUEiA4xNAkwBgxbIfUkIN/iKFZgBHiOaDpUoPDD172bIL1KOoXZO4KEEnPgOhCuhwbcgBr1k1kZRzCwZNO7cyDT4TBgPXq6FkZB5Kg0bu4XciITbQgURg26Q5RvbB5WzMyGZ4QU1X+SI8ucEMtmIjd/z72M4sTHjjx2xxA5oxgoJN92weDHLj2W4MAgbM2gbZrw3IcB+v2D7gwXN+OHhJ9wizS9TLeHM8fcA2GZgEGjihTLaPBgMCzjnJU7wc7gvorW3O+mRZUyKEZucI1oeqcbPNlg0lLiwCDtAUslNciQMmKmVVsQihPcLlDSnUfLoll/ss7HTJYNuqx8aw0HXqE010n/KL9hk+UMeTvTuzP5bYJ11xdYwPv/nKPfu2fMy4pRx+y+6N2I+9Fu0VfIs2zRudpEnXc6XkejKGqvqmyZWPd0tZ/lrOVZuktiC8cIaRpbYgtb7311ltvvfVW3dSr+gaerJ6yqvoWnqyVMmx3moiGyqZ1g5iM7I2yb/hEUI7wXuEWP26HjG+lWAnXugutVKVo7ch6C28DQrfNbtoZBITquL2xBo9VQgg+DaAVQvYiJFRPZZU9q5vCU6yEEDrv0QZFT4sLCfPrrzRR8dOTIkJ13ug1PFBevHYZE6pHv13h5l6PNyFUT2aben6Mbgcgb4Tq4Oib7bAjMv3jfafLnZA8i6tnvKpW0bOEbNxZHdJL62lClRTT+lqumzux0VvPNhdqOfY/O9PiG7sXft8AAAAASUVORK5CYII="
+                            class="brand_logo" alt="Logo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center form_container">
+                    <form>
+                        <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="" class="form-control input_user" value="" placeholder="userID" id="id">
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" name="" class="form-control input_pass" value=""
+                                placeholder="password" id="pw">
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                <label class="custom-control-label" for="customControlInline">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            <button type="button" name="button" class="btn login_btn">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mt-4">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account? <a href="register.html" class="ml-2">Sign Up</a>
+                    </div>
+                    <div class="d-flex justify-content-center links">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
